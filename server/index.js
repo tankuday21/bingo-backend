@@ -6,6 +6,8 @@ process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise, 'reason:', reason);
 });
 
+console.log("Starting backend server...");
+
 
 const express = require("express")
 const http = require("http")
