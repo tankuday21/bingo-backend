@@ -1,13 +1,17 @@
-
-  {
-        "builds": [
-          {
-            "src": "index.js",
-            "use": "@vercel/node"
-          }
-        ],
-        "buildCommand": "npm install",
-        "installCommand": "npm install",
-        "outputDirectory": "."
-      }
-
+{
+  "builds": [
+    {
+      "src": "server/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server/index.js"
+    }
+  ],
+  "buildCommand": "npm install",
+  "installCommand": "npm install",
+  "outputDirectory": "."
+}
