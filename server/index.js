@@ -480,3 +480,7 @@ server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
 
+app.get('/test', (req, res) => {
+  res.status(200).json({ message: 'Backend is live!' });
+});
+
