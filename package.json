@@ -1,0 +1,19 @@
+{
+  "name": "bingo-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "express": "latest",
+    "http": "latest",
+    "socket.io": "latest",
+    "cors": "latest",
+    "uuid": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  }
+}
