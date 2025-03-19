@@ -495,3 +495,6 @@ app.get('/test', (req, res) => {
   res.status(200).json({ message: 'Backend is live!' });
 });
 
+process.on('exit', () => {
+  console.log('Backend server stopped');
+});
